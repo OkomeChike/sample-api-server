@@ -1,0 +1,24 @@
+{
+    "name": "local-go-environment",
+    "dockerComposeFile": "docker-compose.yml",
+    "features": {
+        "docker-from-docker": {
+ 			"version": "latest",
+ 			"dockerDashComposeVersion": "v2"
+ 		}
+    },
+    "service": "golang",
+    "workspaceFolder": "/workspace/src",
+    "customizations":{
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "golang.go",
+                "mhutchie.git-graph"
+            ]
+        }
+    }
+}
