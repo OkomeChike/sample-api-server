@@ -1,0 +1,19 @@
+{
+    "name": "golang_api_server",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/go/src/app",
+    "service": "app",
+    "forwardPorts": [
+      5434,
+      8000
+    ],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+            "dbaeumer.vscode-eslint",
+            "golang.go",
+            "mhutchie.git-graph"
+        ]
+      }
+    }
+  }
